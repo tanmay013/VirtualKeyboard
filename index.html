@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <div class="FlexboxMain">
+        <div class="InputForm">
+            <div class="paper">
+                <div class="paper-content">
+                    <textarea class="tinfo" autofocus placeholder="Virtual Keyboard "></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="KeyboardOptions">
+            <h3>Keyboard Customizer</h3>
+            <hr>
+            <ul>
+               <li> <label>Choose colour for Keyboard Base: </label><input id="keyboardBaseColor" type="color" value="#BCC6CC"><br> </li> 
+                <li><label>Choose colour for Keyboard Keys: </label><input id="keyCapsColor" type="color" value="#000000"><br></li>
+                <li><label>Choose colour for Backlighting: &nbsp; &nbsp;</label><input id="BacklightingColor" type="color" value="#FFFFFF"></li>
+            </ul>
+        </div>
+    </div>
+        
+       
+    
+    <div class="KeyboardMain">
+        <div class="KeyboardBase">
+            <div class="row one">
+                <button class="keys special" Keydata="`" ShiftKeydata="~"></button>
+                <button class="keys special" Keydata="1" ShiftKeydata="!"></button>
+                <button class="keys special" Keydata="2" ShiftKeydata="@"></button>
+                <button class="keys special" Keydata="3" ShiftKeydata="#"></button>
+                <button class="keys special" Keydata="4" ShiftKeydata="$"></button>
+                <button class="keys special" Keydata="5" ShiftKeydata="%"></button>
+                <button class="keys special" Keydata="6" ShiftKeydata="^"></button>
+                <button class="keys special" Keydata="7" ShiftKeydata="&"></button>
+                <button class="keys special" Keydata="8" ShiftKeydata="*"></button>
+                <button class="keys special" Keydata="9" ShiftKeydata="("></button>
+                <button class="keys special" Keydata="0" ShiftKeydata=")"></button>
+                <button class="keys special" Keydata="-" ShiftKeydata="_"></button>
+                <button class="keys special" Keydata="=" ShiftKeydata="+"></button>
+                <button class="keys backspace" Keydata="backspace" ShiftKeydata="backspace"></button>
+            </div>
+
+            <div class="row two">
+                <button class="keys tab" Keydata="Tab" ShiftKeydata="Tab"></button>
+                <button class="keys" Keydata="q" ShiftKeydata="Q"></button>
+                <button class="keys" Keydata="w" ShiftKeydata="W"></button>
+                <button class="keys" Keydata="e" ShiftKeydata="E"></button>
+                <button class="keys" Keydata="r" ShiftKeydata="R"></button>
+                <button class="keys" Keydata="t" ShiftKeydata="T"></button>
+                <button class="keys" Keydata="y" ShiftKeydata="Y"></button>
+                <button class="keys" Keydata="u" ShiftKeydata="U"></button>
+                <button class="keys" Keydata="i" ShiftKeydata="I"></button>
+                <button class="keys" Keydata="o" ShiftKeydata="O"></button>
+                <button class="keys" Keydata="p" ShiftKeydata="P"></button>
+                <button class="keys special" Keydata="[" ShiftKeydata="{"></button>
+                <button class="keys special" Keydata="]" ShiftKeydata="}"></button>
+                <button class="keys tild special" Keydata="\" ShiftKeydata="|"></button>
+            </div>
+
+            <div class="row three">
+                <button class="keys caps" Keydata="Caps" ShiftKeydata="Caps"></button>
+                <button class="keys" Keydata="a" ShiftKeydata="A"></button>
+                <button class="keys" Keydata="s" ShiftKeydata="S"></button>
+                <button class="keys" Keydata="d" ShiftKeydata="D"></button>
+                <button class="keys" Keydata="f" ShiftKeydata="F"></button>
+                <button class="keys" Keydata="g" ShiftKeydata="G"></button>
+                <button class="keys" Keydata="h" ShiftKeydata="H"></button>
+                <button class="keys" Keydata="j" ShiftKeydata="J"></button>
+                <button class="keys" Keydata="k" ShiftKeydata="K"></button>
+                <button class="keys" Keydata="l" ShiftKeydata="L"></button>
+                <button class="keys special" Keydata=";" ShiftKeydata=":"></button>
+                <button class="keys special" Keydata="'" ShiftKeydata='"'></button>
+                <button class="keys enter" Keydata="Enter" ShiftKeydata="Enter"></button>
+            </div>
+
+            <div class="row four">
+                <button class="keys shift" Keydata="Shift" ShiftKeydata="Shift"></button>
+                <button class="keys" Keydata="z" ShiftKeydata="Z"></button>
+                <button class="keys" Keydata="x" ShiftKeydata="X"></button>
+                <button class="keys" Keydata="c" ShiftKeydata="C"></button>
+                <button class="keys" Keydata="v" ShiftKeydata="V"></button>
+                <button class="keys" Keydata="b" ShiftKeydata="B"></button>
+                <button class="keys" Keydata="n" ShiftKeydata="N"></button>
+                <button class="keys" Keydata="m" ShiftKeydata="M"></button>
+                <button class="keys special" Keydata="," ShiftKeydata='<'></button>
+                <button class="keys special" Keydata="." ShiftKeydata=">"></button>
+                <button class="keys special" Keydata="/" ShiftKeydata="?"></button>
+                <button class="keys shift" Keydata="Shift" ShiftKeydata="Shift"></button>
+            </div>
+
+            <div class="row five">
+                <button class="keys Lctrl"  Keydata="ctrl" ShiftKeydata="ctrl"></button>
+                <button class="keys fn"  Keydata="fn" ShiftKeydata="fn"></button>
+                <button class="keys win"  Keydata="win" ShiftKeydata="win"></button>
+                <button class="keys Lalt"  Keydata="alt" ShiftKeydata="alt"></button>
+                <button class="keys space" Keydata="space" ShiftKeydata="space"></button>
+                <button class="keys Ralt"  Keydata="alt" ShiftKeydata="alt"></button>
+                <button class="keys Rctrl" Keydata="ctrl" ShiftKeydata="ctrl"></button>
+                <button class="keys left" Keydata="&lt"  ShiftKeydata="&lt"></button>
+                <button class="keys up"  Keydata="^" ShiftKeydata="^"></button>
+                <button class="keys right"  Keydata="&gt" ShiftKeydata="&gt"></button>
+            </div>
+            
+
+        </div>
+    </div>
+    <script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>

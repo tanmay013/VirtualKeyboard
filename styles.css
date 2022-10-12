@@ -1,0 +1,519 @@
+
+body{
+    background-color: #7b3f00;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+.FlexboxMain{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.InputForm{
+    flex: 65%;   
+}
+
+.KeyboardOptions{
+    flex: 35%;
+    width: 20%;
+    max-width: 800px;
+    min-width: 100px;
+    height: 255px;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    overflow: hidden;
+    
+}
+
+ul{
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.KeyboardOptions h3{
+    margin-bottom: 15px;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    
+}
+
+.KeyboardOptions label{
+    font-size: 18px;
+    font-family: 'Handlee', cursive;
+    font-weight: 600;
+}
+
+.KeyboardOptions input{
+    margin: 10px 0;
+    padding:0;
+    height: 25px;
+    width: 25px;
+}
+
+.paper {
+    position: relative;
+    width: 95%;
+    max-width: 800px;
+    min-width: 400px;
+    height: 255px;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 60px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 35px 35px;
+    border-right: 3px solid #D44147;
+    box-sizing: border-box;
+}
+
+.paper-content {
+    position: absolute;
+    top: 20px; right: 0; bottom: 20px; left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+    background-size: 30px 30px;
+}
+
+.paper-content textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: mediumblue;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+
+.KeyboardBase{
+    text-align: center;
+    margin-top: 30px   ;
+    border: 2px solid transparent;
+    background-color:#BCC6CC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 8px;
+    box-shadow: 30px 20px 20px #321414;
+}
+
+
+
+.row.one button , .row.two button
+{
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 5px 10px 8px;
+    border: 2px solid black;
+    margin: 3.5px;
+}
+
+.row.one button:active , .row.two button:active, .row.three button:active , .row.four button:active, .row.five button:active,
+.row.one button.active , .row.two button.active, .row.three button.active , .row.four button.active, .row.five button.active {
+    box-shadow: 1px 1px 2px #321414, -1px -1px 2px black;
+}
+
+.row.one button{
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+
+.row.three button, .row.four button
+{
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 5px 10px 8px;
+    border: 2px solid black;
+    margin: 3px;
+}
+
+.row.five button{
+    padding-left: 22px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px , -5px -5px 10px;
+    border: none;
+    margin: 3px;    
+}
+
+button:active{
+    box-shadow: 1px 1px 2px , -1px -1px 2px ;
+}
+
+
+.row.three .caps{
+    padding-left:30px ;
+    padding-right:30px ;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 5px 10px 8px ;
+    background-color: black;
+    color: white;    
+}
+
+.row.two .tab, .row.three .enter, .row.two .tild{
+    padding-left:44px ;
+    padding-right:44px ;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 5px 10px 8px ;
+    background-color: black;
+    color: white;
+}
+
+.row.four .shift{
+    padding-left:54px ;
+     padding-right:54px ;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 5px 10px 8px ;
+    background-color: black;
+    color: white;
+
+}
+
+.row.five .space{
+    padding-left:145px ;
+     padding-right:145px ;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 5px 10px 8px ;
+    background-color: black;
+    color: white;
+}
+
+.row.one .backspace{
+    padding-left:18px ;
+    padding-right:18px ;
+   padding-top: 16px;
+   padding-bottom: 18px;
+   border-radius: 8px;
+   border: 2px solid black;
+   box-shadow: 5px 10px 8px ;
+   background-color: black;
+   color: white;
+}
+
+
+
+@media only screen and (max-width:1165px) and (min-width:1040px){
+
+    .FlexboxMain{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .KeyboardBase{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .KeyboardOptions label{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:1040px) and (min-width:1000px){
+
+    .FlexboxMain{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .KeyboardBase{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .KeyboardOptions label{
+        font-size: 17px;
+    }
+}
+
+
+
+@media only screen and (max-width:1000px) and (min-width:700px){
+    .FlexboxMain{
+        margin-top: 20%;
+        margin-bottom: 10%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .KeyboardMain{
+        margin-bottom: 20%;
+    }
+
+    .KeyboardBase{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .KeyboardOptions label{
+        font-size: 13px;
+    }
+
+    .KeyboardOptions input{
+        margin: 5px 0;
+        padding:0;
+        height: 25px;
+        width: 25px;
+    }
+
+    .row.one button , .row.two button
+    {
+        font-size: 10px;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin: 2px;
+    }
+    .row.one .backspace{
+        font-size: 10px;
+        padding-left:2% ;
+        padding-right:2% ;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .row.two .tab, .row.three .enter, .row.two .tild{
+        font-size: 10px;
+        padding-left:2.8% ;
+        padding-right:2.8% ;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin: 2px;
+    }
+    .row.three button, .row.four button
+    {
+        font-size: 10px;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin: 2px;
+    }
+    .row.three .caps{
+        padding-left:4.5% ;
+        padding-right:4.5% ;
+        padding-top: 12px;
+        padding-bottom: 12px;   
+    }
+    .row.four .shift{
+        padding-left:5.5% ;
+        padding-right:5.5% ;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .row.five button{
+        font-size: 10px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin: 2px;    
+    }
+    .row.five .space{
+        padding-left:11% ;
+         padding-right:11% ;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .FlexboxMain{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 1%;
+        margin-right: 1%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .InputForm{
+        flex: 100%;
+        flex-direction: column; 
+    }
+    
+    .KeyboardOptions{
+        flex: 100%;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 8%;
+        height: 235px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .KeyboardMain{
+        margin-bottom: 15%;
+    }
+    .KeyboardOptions h3{
+        font-family: 'Handlee', cursive;
+        font-size: 100%;   
+    }
+    
+    .KeyboardOptions label{
+        font-size: 100%;
+        font-family: 'Handlee', cursive;
+        font-weight: 600;
+    }
+
+    .paper {
+        width: 100%;
+        height: 255px;
+        min-width: 0px;
+    }
+    .paper:before {
+        width: 50px;
+        background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+        background-size: 25px 25px;
+        border-right: 3px solid #D44147;
+        box-sizing: border-box;
+        min-width: none;
+    }
+
+    .paper-content {
+        left: 50px;
+    }
+    
+    .paper-content textarea {
+        font-size: 15px;
+    }
+
+    .KeyboardBase{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: .5%;
+        margin-right: .5%;
+        border-radius: 8px;
+    }
+
+    .row.one button , .row.two button
+    {
+        padding-left: 1.7%;
+        padding-right: 1.7%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 7px;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin: 1px 0px;
+    }
+    .row.one .backspace{
+        padding-left:1% ;
+        padding-right:1% ;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 4px;
+        border: 1px solid black;
+    }
+    .row.two .tab, .row.three .enter, .row.two .tild{
+        font-size: 7px;
+        padding-left:2.6% ;
+        padding-right:2.6% ;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin: 1px 0px;
+        border-radius: 4px;
+    }
+
+    .row.three button, .row.four button
+    {
+        font-size: 7px;
+        padding-left: 1.7%;
+        padding-right: 1.7%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 4px;
+        border: 1px solid black;
+        margin: 1px 0px;
+    }
+    .row.three .caps{
+        padding-left:3.6% ;
+        padding-right:3.6% ;
+        padding-top: 7px;
+        padding-bottom: 7px;  
+        border-radius: 4px;
+        border: 1px solid black;
+        margin: 1px 0px; 
+    }
+    .row.four .shift{
+        padding-left:4.7% ;
+        padding-right:4.7% ;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 4px;
+        margin: 1px 0px; 
+    }
+    .row.five button{
+        font-size: 7px;
+        padding-left: 1.9%;
+        padding-right: 1.9%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin: 1px 0px;   
+        border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 5px , -1px -1px 5px ;
+
+
+    }
+    .row.five .space{
+        padding-left:11.5% ;
+         padding-right:11.5% ;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin: 1px 0px;   
+        border-radius: 4px;
+        box-shadow: 1px 1px 5px , -1px -1px 5px ;
+    }
+}
