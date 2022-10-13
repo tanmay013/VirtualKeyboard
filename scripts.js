@@ -8,12 +8,27 @@ let winKey = document.querySelector('.win');
 let upKey = document.querySelector('.up');
 let leftKey = document.querySelector('.left');
 let rightKey = document.querySelector('.right');
-var info = document.querySelector('.tinfo');
 var ShiftKey = document.querySelector(".shift");
 let KeyboardBaseColor = document.getElementById('keyboardBaseColor');
 let KeyBoardBase = document.querySelector('.KeyboardBase');
 let KeyCapsColor = document.getElementById('keyCapsColor');
 let BackLightingColor = document.getElementById('BacklightingColor');
+
+info = document.querySelector('.Fname');
+
+function FnameActive(){
+    info = document.querySelector('.Fname');
+    console.log('hello');
+}
+
+function LnameActive(){
+    info = document.querySelector('.Lname');
+}
+
+function TextAreaActive(){
+    info = document.querySelector('.tinfo');
+}
+
 
 allKeys.forEach((key,idx) => {
     key.innerHTML = key.attributes.Keydata.value;
@@ -43,7 +58,9 @@ function changeBacklighting(){
     }
 }
 
-
+function refreshPage(){
+    window.location.reload();
+}
 
 var ShiftOn = 0;
 const ShiftToggle = () => {
@@ -128,6 +145,7 @@ for(let i=0; i<allKeys.length;i++)
 }
 
 window.addEventListener('keydown', function(e){
+    var KeySound = new Audio('keysound.mp3');
     for(let i=0; i<allKeys.length; ++i)
     {   
         if(e.key.toLowerCase() == allKeys[i].getAttribute('Keydata').toLowerCase()){
@@ -136,55 +154,47 @@ window.addEventListener('keydown', function(e){
             allKeys[i].classList.add('active');
         }
         if(e.code.toLowerCase() == 'capslock'){
-            var KeySound = new Audio('keysound.mp3'); 
             capsKey.classList.toggle('active');
             CapsToggle();
             KeySound.play();
         }
         if(e.code.toLowerCase() == 'shiftleft' || e.code.toLowerCase() == 'shiftright'){
-            var KeySound = new Audio('keysound.mp3');
             KeySound.play();
             ShiftKey.classList.toggle('active');
             ShiftToggle();
         }
         if(e.code.toLowerCase() == 'controlleft')
         {
-            var KeySound = new Audio('keysound.mp3');
             KeySound.play();
             leftCtrlKey.classList.add('active');
         }
         if(e.code.toLowerCase() == 'controlright')
         {
-            var KeySound = new Audio('keysound.mp3');
             KeySound.play();
             rightCtrlKey.classList.add('active');
         }
         if(e.code.toLowerCase() == 'arrowup')
         {
-            var KeySound = new Audio('keysound.mp3');
             KeySound.play();
             upKey.classList.add('active');
         }
         if(e.code.toLowerCase() == 'arrowright')
         {
-            var KeySound = new Audio('keysound.mp3');
             KeySound.play();
             rightKey.classList.add('active');
         }
         if(e.code.toLowerCase() == 'arrowleft')
         {
-            var KeySound = new Audio('keysound.mp3');
             KeySound.play();
             leftKey.classList.add('active');
         }
         if(e.code.toLowerCase() == 'metaleft')
         {
-            var KeySound = new Audio('keysound.mp3');
             KeySound.play();
             winKey.classList.add('active');
         }
         if(e.code.toLowerCase() == 'space'){
-            var KeySound = new Audio('keysound.mp3');
+            
             KeySound.play();
             spaceKey.classList.add('active');
         }
