@@ -119,7 +119,7 @@ ul{
 
 .paper-content .Fname, .paper-content .Lname{
     width: 75%;
-    max-width: 100%;
+    max-width: 75%;
     height: 11%;
     max-height: 11%;
     line-height: 30px;
@@ -339,6 +339,7 @@ button:active{
 
 
 @media only screen and (max-width:1000px) and (min-width:700px){
+
     .FlexboxMain{
         margin-top: 20%;
         margin-bottom: 10%;
@@ -363,6 +364,36 @@ button:active{
         padding:0;
         height: 25px;
         width: 25px;
+    }
+
+    .paper-content .Lname{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .paper-content textarea {
+        height: 20%;
+        max-height: 20%;
+        line-height: 50px;
+        font-size: 15px;
+    }
+
+    .paper-content .submitbtn{
+        width: 100%;
+        max-width: 100%;
+        height: 10%;
+        max-height: 10%;
+        line-height: 33px;
+        padding: 0 10px;
+        background: #91D1D3;
+        color: #B73E3E;
+        font-family: 'Handlee', cursive;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        box-sizing: border-box;
+        margin-top:0px;
+        z-index: 1;
     }
 
     .row.one button , .row.two button
@@ -478,18 +509,43 @@ button:active{
         box-sizing: border-box;
         min-width: none;
     }
+    .paper-content .Lname{
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
 
     .paper-content {
         left: 50px;
     }
-    
     .paper-content textarea {
-        font-size: 15px;
-    }
-    .paper-content .Fname, .paper-content .Lname{
+        height: 20%;
+        max-height: 20%;
+        line-height: 50px;
         font-size: 15px;
     }
 
+    .paper-content .submitbtn{
+        width: 100%;
+        max-width: 100%;
+        height: 10%;
+        max-height: 10%;
+        line-height: 33px;
+        padding: 0 10px;
+        background: #91D1D3;
+        color: #B73E3E;
+        font-family: 'Handlee', cursive;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        box-sizing: border-box;
+        margin-top:0;
+        z-index: 1;
+    }
+
+
+    .paper-content .Fname, .paper-content .Lname{
+        font-size: 15px;
+    }
     .KeyboardBase{
         padding-top: 5px;
         padding-bottom: 5px;
